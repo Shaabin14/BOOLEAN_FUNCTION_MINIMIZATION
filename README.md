@@ -19,6 +19,9 @@ Hardware – PCs, Cyclone II , USB flasher
 **Logic Diagram**
  ![de2](https://github.com/user-attachments/assets/12e4790f-6a58-4c9c-897b-d7a3b570d393)
 
+
+ ![de18](https://github.com/user-attachments/assets/5642dfc1-152b-4238-9a14-4c0f91cc1b56)
+
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -35,28 +38,61 @@ Hardware – PCs, Cyclone II , USB flasher
 **Program:**
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-![de3](https://github.com/user-attachments/assets/eb6b9ebc-88a6-4dd2-a5b9-bda5fe5e4d6c)
-
-
 Developed by:SHAABIN R S RegisterNumber:*/24006663
 
 
+ module experiment2(a,b,c,d,f1);
+ input a,b,c,d;
+ output f1;
+ assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+ endmodule
+
+
+ 
+ module experiment2(w,x,y,z,f2);
+ input w,x,y,z;
+ output f2;
+ assign f2=((~y & z)|( w & y )|(x & y))
+ endmodule
+
 **RTL realization**
-![de4](https://github.com/user-attachments/assets/b184297a-2408-4471-8348-3e6b1325db7b)
+
+
+
+![de19](https://github.com/user-attachments/assets/e3066543-b288-42a0-a5e4-f89581154877)
+
+
+
+
+
+
+![de20](https://github.com/user-attachments/assets/ec122850-e926-4b35-9785-fa01a9e9173a)
+
 
 **Output:**
 
-**RTL**
 
-**Timing Diagram**a b c d ~b ~d ~a ~c (~b & ~d) (~a & b & d) (a & b & ~c) f1 (final result) 0 0 0 0 1
- 1 1 1 1 0 0 1 0 0 0 1 1 0 1 1 0 0 0 0 0 0 1 0 1 1 1 0 1 0 0 1 0 0 1 1 1 0 1 0 0 0 0 0 0 1 0 0 0 1 1 1 0 0 1
- 1 0 1 0 1 0 0 1 1 0 1 0 1 0 1 1 0 0 1 1 0 0 0 0 0 0 1 1 1 0 0 1 0 0 1 0 1 1 0 0 0 1 1 0 1 1 0 0 1 1 0 0 1 1
- 0 0 1 0 0 0 0 1 0 1 0 1 1 0 0 1 0 0 1 1 0 1 1 1 0 0 0 0 0 0 0 1 1 0 0 0 1 0 1 0 1 1 1 1 1 0 1 0 0 0 1 0 1 0
-1 1 1 1 0 0 1 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 1 0 1
-![de5](https://github.com/user-attachments/assets/a4b4051d-12c4-4f9a-a833-2c7cdba27d21)
+
+![de21](https://github.com/user-attachments/assets/14e50194-f028-4cfb-bf64-525ccded9da6)
+
+
+
+
+K-MAP
+
+
+
+![de22](https://github.com/user-attachments/assets/e98fc4e8-86a2-4124-8cd0-4246f5b77195)
+
+
+
+
+![de23](https://github.com/user-attachments/assets/3f8999cd-e578-4dcc-bf38-d401fd41c954)
+
+
 
 **Result:**
  Thus the given logic functions are implemented using and their operations are verified using
  Verilog programming
-Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
+
 
